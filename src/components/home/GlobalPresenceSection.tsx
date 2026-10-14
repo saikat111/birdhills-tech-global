@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { MapPin, Phone, MessageSquare, ArrowUpRight } from "lucide-react";
 
-export function DubaiSection() {
+export function GlobalPresenceSection() {
   return (
     <section className="py-24 bg-white border-t border-[#E4E7EC] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,7 +21,7 @@ export function DubaiSection() {
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#C59B27] to-[#B38728]">Delivering precision worldwide.</span>
                 </h2>
                 <p className="text-base text-slate-300 leading-relaxed max-w-lg">
-                  With strategic engineering hubs in Dubai, London, and Singapore, Bird Hills Tech partners with ambitious enterprises across the Americas, EMEA, and Asia-Pacific to build next-generation software platforms and scalable cloud ecosystems.
+                  With strategic engineering hubs in London, New York, and Singapore, Bird Hills Tech partners with ambitious enterprises across the Americas, EMEA, and Asia-Pacific to build next-generation software platforms and scalable cloud ecosystems.
                 </p>
               </div>
 
@@ -32,7 +32,7 @@ export function DubaiSection() {
                   <div className="text-sm">
                     <div className="font-bold text-white">Global Delivery Hubs</div>
                     <div className="text-slate-400 mt-0.5">
-                      Dubai · London · Singapore · Distributed Engineering Worldwide
+                      London · New York · Singapore · Distributed Engineering Worldwide
                     </div>
                     <div className="text-slate-400 text-xs mt-1">Operating in EST, GMT, GST, and SGT time zones</div>
                   </div>
@@ -70,11 +70,11 @@ export function DubaiSection() {
               </div>
             </div>
 
-            {/* Right Image: Sophisticated Dubai Architecture */}
+            {/* Right Image: Modern Global Tech Innovation Architecture */}
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[380px] bg-slate-900">
               <Image
-                src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85"
-                alt="Dubai iconic modern urban business skyline and architecture"
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85"
+                alt="Modern global enterprise technology center and corporate headquarters"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
@@ -87,4 +87,4 @@ export function DubaiSection() {
     </section>
   );
 }
-export default DubaiSection;
+export default GlobalPresenceSection;

@@ -25,8 +25,8 @@ interface HeroProps {
 const HERO_SLIDES = [
   {
     image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2400&q=95",
-    alt: "Futuristic global architecture and connected international digital metropolis",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=95",
+    alt: "Modern glass and steel global enterprise corporate towers and international tech center",
     tag: "GLOBAL FOOTPRINT & SCALE",
     location: "Enterprise Web Engineering & Worldwide Cloud Operations",
     highlight: "Next.js Platforms · Bespoke UI/UX Design Systems · Multi-Region Scalability",
@@ -154,11 +154,17 @@ export function HeroSection({
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-md">
-              {headline.split("Dubai")[0]}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F3E7C4] via-[#D4AF37] to-[#C59B27] relative inline-block drop-shadow-sm">
-                Dubai
-              </span>
-              {headline.split("Dubai")[1] || ""}
+              {headline.includes("Enterprise") ? (
+                <>
+                  {headline.split("Enterprise")[0]}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F3E7C4] via-[#D4AF37] to-[#C59B27] relative inline-block drop-shadow-sm">
+                    Enterprise
+                  </span>
+                  {headline.split("Enterprise")[1] || ""}
+                </>
+              ) : (
+                headline
+              )}
             </h1>
 
             {/* Supporting Copy */}

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Bird Hills Tech Dubai",
-  description: "Privacy policy and data governance practices of Bird Hills Tech (Dubai, UAE).",
+  title: "Privacy Policy | Bird Hills Tech Global",
+  description: "Privacy policy and international data governance practices of Bird Hills Tech Global.",
   alternates: {
     canonical: "https://birdhillstech.com/privacy-policy",
   },
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[#070B14]">Privacy Policy</h1>
           <p className="text-xs text-slate-500 mt-2">
-            Last Updated: January 2026 · Bird Hills Tech (Dubai, UAE)
+            Last Updated: January 2026 · Bird Hills Tech Global
           </p>
         </div>
       </section>
@@ -54,12 +54,11 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-[#070B14] mb-3">3. Data Protection and Regional Compliance</h2>
+            <h2 className="text-xl font-bold text-[#070B14] mb-3">3. Data Protection and Global Compliance</h2>
             <p className="text-sm sm:text-base text-[#667085] leading-relaxed">
               We maintain technical, administrative, and physical security measures designed to
               protect personal data against unauthorized access, loss, or alteration. Our operations
-              adhere to the United Arab Emirates Federal Decree-Law No. 45 of 2021 regarding Personal
-              Data Protection (PDPL) as well as international best practices.
+              adhere to recognized international data protection principles (including GDPR and regional data privacy standards) as well as technical best practices.
             </p>
           </div>
 
@@ -78,11 +77,11 @@ export default function PrivacyPolicyPage() {
               If you have any questions regarding this Privacy Policy or wish to request data
               rectification or deletion, please contact our legal representative at:
               <br />
-              <strong className="text-[#070B14]">Bird Hills Tech</strong>
+              <strong className="text-[#070B14]">Bird Hills Tech Global</strong>
               <br />
-              Deira - Stone Building - 122 7th A Street - Al Baraha - Dubai, UAE
+              Global Delivery Hubs: London · New York · Singapore · Distributed Delivery Worldwide
               <br />
-              Email: contact@birdhillstech.com · Phone: +971 52 440 5785
+              Email: contact@birdhillstech.com · International Hotline: +971 52 440 5785
             </p>
           </div>
         </div>

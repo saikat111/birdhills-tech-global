@@ -48,11 +48,11 @@ export default function DomainsPage() {
     },
     {
       extension: ".ae",
-      purpose: "Official UAE National Identity for Dubai & Gulf Enterprises",
+      purpose: "Regional Middle East Expansion & Emerging GCC Markets",
       price: "$39.99",
       period: "/ year",
       popular: true,
-      badge: "UAE Hub",
+      badge: "Regional TLD",
     },
     {
       extension: ".io",
@@ -284,7 +284,7 @@ export default function DomainsPage() {
                 Transfer Your Existing Domains with Zero Interruption.
               </h2>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Consolidate your domains and cloud hosting under a single authoritative Dubai technology partner. Every domain transfer includes an automatic 1-year renewal extension and dedicated technical oversight.
+                Consolidate your domains and cloud hosting under a single authoritative global enterprise technology partner. Every domain transfer includes an automatic 1-year renewal extension and dedicated technical oversight.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 <div className="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#C59B27]/30 transition-colors">

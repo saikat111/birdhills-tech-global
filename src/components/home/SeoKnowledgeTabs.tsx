@@ -39,7 +39,7 @@ const TABS_DATA: TabContent[] = [
     title: "Enterprise Next.js Architecture & High Performance",
     subtitle: "Eliminating plugin bloat with type-safe engineering built for speed and conversion.",
     description:
-      "Modern enterprises in the UAE require instant responsiveness. In Dubai's competitive market, slow corporate websites lose high-intent prospects quickly. We build with Next.js, TypeScript, and server-side edge rendering to deliver instant page responses, smooth navigation, and frictionless user experiences. Every line of code is clean, modular, and fully handed over to your organization.",
+      "Modern enterprises require instant responsiveness. In competitive global markets, slow corporate websites lose high-intent prospects quickly. We build with Next.js, TypeScript, and server-side edge rendering to deliver instant page responses, smooth navigation, and frictionless user experiences worldwide. Every line of code is clean, modular, and fully handed over to your organization.",
     highlights: [
       {
         title: "Optimized Performance & Core Web Vitals",
@@ -93,8 +93,8 @@ const TABS_DATA: TabContent[] = [
     ],
     ctaText: "Explore Search & SEO Services",
     ctaHref: "/services/google-business-profile-local-seo",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85",
-    imageAlt: "International skyline and connected global business centers",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85",
+    imageAlt: "Global digital connectivity network, international enterprise data and cloud architecture",
   },
   {
     id: "b2b-growth",
@@ -130,19 +130,19 @@ const TABS_DATA: TabContent[] = [
   },
   {
     id: "cloud-infra",
-    label: "Cloud & .ae Domains",
+    label: "Cloud & Global Domains",
     icon: Server,
-    title: "Sub-15ms GCC Edge Latency & Accredited .ae Registry",
+    title: "Multi-Region Edge Cloud & Global Domain Portfolio Management",
     subtitle: "Enterprise NVMe cloud storage, automated daily backups, and bank-grade DNSSEC shielding.",
     description:
-      "Hosting your Middle East business on distant European or US servers introduces 180ms+ network latency that degrades Core Web Vitals and hurts local search rank. Our pure NVMe cloud infrastructure is optimized specifically for Gulf traffic, serving content in under 15ms across the UAE and Saudi Arabia. We provide direct .ae domain registration, free zero-downtime website migrations, and corporate email systems with strict SPF/DKIM/DMARC deliverability.",
+      "Hosting your business on distant, monolithic servers introduces latency that degrades Core Web Vitals and hurts search rankings. Our pure NVMe cloud infrastructure is distributed globally across Tier-4 data centers, serving content with ultra-low latency worldwide. We provide direct gTLD/ccTLD domain management, free zero-downtime website migrations, and corporate email systems with strict SPF/DKIM/DMARC deliverability.",
     highlights: [
       {
         title: "Pure NVMe Enterprise Storage",
         desc: "Up to 10x faster I/O throughput compared to traditional SATA SSD hosting providers.",
       },
       {
-        title: "Accredited UAE .ae Registrar",
+        title: "Global Domain Portfolio Management",
         desc: "Secure direct domain registration with instant DNS routing and full ownership transfer.",
       },
       {
@@ -151,7 +151,7 @@ const TABS_DATA: TabContent[] = [
       },
     ],
     metrics: [
-      { value: "< 15ms", label: "GCC Regional Edge Latency" },
+      { value: "< 30ms", label: "Global Edge Latency" },
       { value: "99.99%", label: "Guaranteed Network SLA" },
       { value: "0 sec", label: "Downtime During Migration" },
     ],
@@ -171,7 +171,7 @@ const TABS_DATA: TabContent[] = [
     highlights: [
       {
         title: "Sub-5-Second WhatsApp Lead Response",
-        desc: "Engage prospective international buyers immediately, even outside normal UAE office hours.",
+        desc: "Engage prospective international buyers immediately across any global time zone.",
       },
       {
         title: "Private Knowledge Retrieval (RAG)",
@@ -211,7 +211,7 @@ const TABS_DATA: TabContent[] = [
       },
       {
         title: "International Compliance & Privacy",
-        desc: "Full alignment with international standards (GDPR, SOC-2, UAE PDPL, and CCPA).",
+        desc: "Full alignment with international standards (GDPR, SOC-2, ISO 27001, and CCPA).",
       },
     ],
     metrics: [
@@ -337,7 +337,7 @@ export default function SeoKnowledgeTabs() {
                   href="/book-a-meeting"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold bg-white/5 hover:bg-white/10 text-white border border-white/15 transition-colors"
                 >
-                  <span>Book Dubai Consultation</span>
+                  <span>Book Strategy Consultation</span>
                 </Link>
               </div>
             </div>
@@ -356,10 +356,10 @@ export default function SeoKnowledgeTabs() {
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#070B14]/85 backdrop-blur-md border border-white/15">
                   <div className="flex items-center gap-2 text-xs font-bold text-[#D4AF37]">
                     <Zap size={14} />
-                    <span>VERIFIED GCC DEPLOYMENT BENCHMARK</span>
+                    <span>VERIFIED GLOBAL DEPLOYMENT BENCHMARK</span>
                   </div>
                   <div className="text-xs text-slate-300 mt-1">
-                    Audited for peak performance, zero technical debt, and maximum UAE conversion rate.
+                    Audited for peak performance, zero technical debt, and maximum global conversion rate.
                   </div>
                 </div>
               </div>

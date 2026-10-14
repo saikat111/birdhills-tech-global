@@ -21,25 +21,25 @@ export function ComparisonMatrixSection() {
     {
       criterion: "Marketing & Growth Attribution",
       traditional: "Reports vanity impressions, superficial clicks, and unverifiable bounce rates.",
-      birdhills: "Closed-loop revenue tracking. Every dirham tied to verified leads in your CRM.",
+      birdhills: "Closed-loop revenue tracking. Every dollar tied to verified leads in your CRM.",
       highlight: true,
     },
     {
       criterion: "Hosting & Server Latency",
-      traditional: "Shared offshore European servers with 180ms+ latency across the GCC.",
-      birdhills: "Pure NVMe edge cloud infrastructure with sub-15ms local UAE latency.",
+      traditional: "Legacy single-region hosting with sluggish global latency and frequent downtime.",
+      birdhills: "Global distributed NVMe edge cloud architecture with multi-region failover and sub-50ms worldwide latency.",
       highlight: false,
     },
     {
-      criterion: "Physical Presence & Accountability",
+      criterion: "Team Ownership & Accountability",
       traditional: "Outsourced offshore teams hiding behind impersonal ticket support queues.",
-      birdhills: "Physical Dubai office at Stone Building, Deira. Direct senior engineering advisory.",
+      birdhills: "Direct senior engineering squad and dedicated technical account managers with SLAs.",
       highlight: false,
     },
     {
       criterion: "AI & Automation Capabilities",
-      traditional: "Generic robotic chatbots that fail to understand Arabic or business context.",
-      birdhills: "Autonomous AI agents & WhatsApp Cloud API workflows trained strictly on your knowledge base.",
+      traditional: "Generic robotic chatbots that lack domain context and hallucination controls.",
+      birdhills: "Autonomous AI agents & custom API workflows trained strictly on your knowledge base.",
       highlight: false,
     },
   ];
@@ -54,11 +54,11 @@ export function ComparisonMatrixSection() {
             EXECUTIVE ADVANTAGE & COMPARISON
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#070B14] leading-tight">
-            Why GCC Enterprises Choose
+            Why Global Enterprises Choose
             <span className="block text-[#1D68BD] mt-1">Bird Hills Tech Over Traditional Agencies</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#475467] leading-relaxed">
-            See the concrete difference between generic outsourced agencies and a dedicated technology, creative, and digital growth partner in Dubai.
+            See the concrete difference between generic outsourced agencies and an elite global technology, software engineering, and digital growth partner.
           </p>
         </div>
 

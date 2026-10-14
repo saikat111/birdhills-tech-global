@@ -186,7 +186,7 @@ export default async function ProjectDetailPage({
               <div className="text-slate-400 font-bold uppercase tracking-wider text-[10px]">
                 Target Market
               </div>
-              <div className="font-bold text-white text-sm mt-1">Dubai & GCC Enterprises</div>
+              <div className="font-bold text-white text-sm mt-1">Global Enterprises</div>
             </div>
             <div>
               <div className="text-slate-400 font-bold uppercase tracking-wider text-[10px]">

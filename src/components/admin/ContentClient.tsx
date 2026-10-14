@@ -33,22 +33,22 @@ const DEFAULT_PAGES = [
   {
     slug: "homepage",
     title: "Homepage Copy & Hero",
-    seoTitle: "Bird Hills Tech | Technology × Creative × Growth in Dubai",
-    seoDescription: "Dubai-based technology, creative and digital growth firm. We combine custom web development, software engineering, and performance marketing.",
+    seoTitle: "Bird Hills Tech | Global Technology × Creative × Growth",
+    seoDescription: "Global enterprise technology, software engineering, and digital growth firm. We deliver custom web platforms, cloud architecture, and international performance marketing.",
     contentJson: JSON.stringify(
       {
         heroEyebrow: "TECHNOLOGY × CREATIVE × GROWTH",
-        heroHeadline: "Your Digital Growth Partner in Dubai",
+        heroHeadline: "Your Global Digital Engineering & Growth Partner",
         heroSubcopy:
-          "We combine web development, creative design and digital marketing to build powerful digital experiences and measurable business growth.",
+          "We combine enterprise web development, bespoke UI/UX architecture, and data-driven digital growth to scale industry leaders worldwide.",
         trustStatement:
-          "Helping ambitious UAE and international businesses build, launch and scale digital operations.",
-        dubaiHeading: "Built in Dubai. Built for a global tomorrow.",
-        dubaiSubcopy:
-          "Based in Dubai, Bird Hills Tech works with ambitious businesses to create modern digital experiences combining technology, creativity and measurable growth.",
+          "Helping ambitious global enterprises build, launch, and scale mission-critical digital systems.",
+        globalPresenceHeading: "Global Reach. International Excellence.",
+        globalPresenceSubcopy:
+          "Operating across major global commercial hubs, Bird Hills Tech partners with high-growth enterprises to deliver resilient digital platforms with measurable ROI.",
         ctaHeadline: "Let's Build Something Exceptional Together",
         ctaSubcopy:
-          "Schedule a consultation with our technology and growth directors in Dubai to discuss your product, platform, or expansion.",
+          "Schedule an executive consultation with our technology and growth partners to discuss your enterprise product, platform, or global expansion.",
       },
       null,
       2
@@ -57,19 +57,19 @@ const DEFAULT_PAGES = [
   {
     slug: "about",
     title: "About Us & Corporate Philosophy",
-    seoTitle: "About Bird Hills Tech | Dubai Technology & Creative Agency",
-    seoDescription: "Learn about Bird Hills Tech, a Dubai firm uniting technology, creative design, and commercial growth.",
+    seoTitle: "About Bird Hills Tech | Global Enterprise Technology Firm",
+    seoDescription: "Learn about Bird Hills Tech, an international technology and growth firm uniting software engineering, cloud systems, and commercial scaling.",
     contentJson: JSON.stringify(
       {
         missionStatement:
-          "To engineer superior technology and creative digital assets that empower businesses across Dubai and the GCC to lead their markets.",
+          "To engineer superior technology and creative digital assets that empower ambitious enterprises worldwide to dominate their markets.",
         visionStatement:
-          "To be the premier digital growth architecture partner for leading enterprises in the Middle East.",
+          "To be the premier digital growth architecture and technology partner for modern global enterprises.",
         coreValues: [
           "Engineering Rigor: No shortcuts or bloated templates.",
-          "Design Precision: Aesthetic excellence tailored to regional and global standards.",
+          "Design Precision: Aesthetic excellence tailored to international enterprise standards.",
           "Measurable ROI: Technology that generates revenue and accelerates pipeline.",
-          "Client Transparency: Direct access to directors and dedicated technical teams.",
+          "Client Transparency: Direct access to partners and dedicated technical squads.",
         ],
       },
       null,
@@ -79,16 +79,16 @@ const DEFAULT_PAGES = [
   {
     slug: "contact",
     title: "Contact Page Details",
-    seoTitle: "Contact Bird Hills Tech | Deira, Dubai Office",
-    seoDescription: "Get in touch with Bird Hills Tech. Visit our Dubai office or schedule an online strategy session.",
+    seoTitle: "Contact Bird Hills Tech | Global Enterprise Consultation",
+    seoDescription: "Get in touch with Bird Hills Tech Global. Connect with our international delivery hubs or schedule an executive consultation.",
     contentJson: JSON.stringify(
       {
-        officeAddress: "Deira - Stone Building - 122 7th A Street - Al Baraha - Dubai, UAE",
-        businessHours: "Monday – Saturday: 9:00 AM – 6:00 PM (Gulf Standard Time)",
+        officeAddress: "London · New York · Singapore · Distributed Engineering Worldwide",
+        businessHours: "24/7 Global Client Support & Enterprise SLA Monitoring",
         phoneHotline: "+971 52 440 5785",
         whatsappHotline: "+971 52 440 5785",
         emailInquiries: "contact@birdhillstech.com",
-        responseCommitment: "All commercial inquiries receive director response within 2 hours during UAE business hours.",
+        responseCommitment: "All commercial inquiries receive senior technical partner response within 2 to 4 business hours.",
       },
       null,
       2

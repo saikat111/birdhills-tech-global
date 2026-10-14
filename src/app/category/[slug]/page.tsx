@@ -25,7 +25,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${category.name} Insights | Bird Hills Tech Dubai`,
+    title: `${category.name} Insights | Bird Hills Tech Global`,
     description: category.description || `Articles and perspectives in ${category.name}`,
     alternates: {
       canonical: `https://birdhillstech.com/category/${category.slug}`,

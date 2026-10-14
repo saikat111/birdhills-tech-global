@@ -15,7 +15,7 @@ export function Footer({ settings = {} }: FooterProps) {
 
   const phone = settings["phone"] || "+971 52 440 5785";
   const email = settings["email"] || "contact@birdhillstech.com";
-  const address = settings["address"] || "Deira - Stone Building - 122 7th A Street - Al Baraha - Dubai, UAE";
+  const address = settings["address"] || "Global Delivery Hubs: London · New York · Singapore · Distributed Engineering Worldwide";
   const whatsapp = settings["whatsapp"] || "+971 52 440 5785";
   const companyName = settings["company_name"] || "Bird Hills Tech";
   const cleanPhone = phone.replace(/[^0-9+]/g, "");

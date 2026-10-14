@@ -40,8 +40,8 @@ export default async function ContactPage() {
       <section className="relative py-24 md:py-32 bg-[#070B14] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=90"
-            alt="Global business center and technology skyline"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=90"
+            alt="Global business center and corporate technology skyline"
             fill
             priority
             sizes="100vw"
@@ -75,7 +75,7 @@ export default async function ContactPage() {
               <ContactForm />
             </div>
 
-            {/* Right: Dubai Office Details & Direct Channels */}
+            {/* Right: Direct Channels & Corporate Operations */}
             <div className="lg:col-span-5 space-y-8">
               {/* Direct WhatsApp Action Box */}
               <div className="p-8 rounded-3xl bg-white border border-emerald-200/80 space-y-4 shadow-sm">
@@ -85,11 +85,11 @@ export default async function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-[#070B14]">Immediate WhatsApp Response</h3>
-                    <div className="text-xs text-emerald-700 font-semibold">Average response under 15 minutes during UAE business hours</div>
+                    <div className="text-xs text-emerald-700 font-semibold">Average response under 15 minutes during global business hours</div>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-[#475467] leading-relaxed">
-                  Need an immediate consultation or want to share scope documents directly with our project directors in Dubai?
+                  Need an immediate consultation or want to share scope documents directly with our senior project directors?
                 </p>
                 <div>
                   <a
@@ -109,13 +109,13 @@ export default async function ContactPage() {
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] via-[#C59B27] to-[#B38728]" />
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C59B27]">
                   <Calendar size={15} />
-                  Direct Video or In-Person Consultation
+                  Direct Video or Strategy Consultation
                 </div>
                 <h3 className="text-base font-bold text-[#070B14]">
                   Prefer a Scheduled 30-Minute Briefing?
                 </h3>
                 <p className="text-xs text-[#667085] leading-relaxed">
-                  Choose your preferred date and Gulf Standard Time (GST) slot directly on our live calendar.
+                  Choose your preferred date and local time slot directly on our live calendar.
                 </p>
                 <div className="pt-2">
                   <Link
@@ -129,7 +129,7 @@ export default async function ContactPage() {
 
               {/* Corporate Coordinates */}
               <div className="p-8 rounded-3xl bg-white border border-[#E4E7EC] space-y-6 shadow-sm">
-                <h3 className="text-base font-bold text-[#070B14]">Dubai Headquarters Coordinates</h3>
+                <h3 className="text-base font-bold text-[#070B14]">Global Corporate Operations & Hubs</h3>
 
                 <div className="space-y-4 text-xs sm:text-sm text-[#667085]">
                   <div className="flex items-start gap-3">
@@ -177,36 +177,36 @@ export default async function ContactPage() {
         </div>
       </section>
 
-      {/* 3. VISIT OUR DUBAI HEADQUARTERS & LANDMARKS */}
+      {/* 3. GLOBAL DELIVERY NETWORK & STRATEGIC HUBS */}
       <section className="py-20 bg-white border-t border-[#E4E7EC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-6 space-y-4">
               <span className="text-xs font-bold tracking-wider uppercase text-[#C59B27]">
-                LOCATION & DIRECTIONS
+                GLOBAL DELIVERY NETWORK
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#070B14]">
-                Visiting Stone Building, Al Baraha
+                Worldwide Engineering & Strategic Delivery Hubs
               </h2>
               <p className="text-xs sm:text-sm text-[#667085] leading-relaxed">
-                Our central Dubai location provides seamless connectivity to both Old Dubai and modern business centers:
+                Bird Hills Tech operates a distributed engineering model with regional presence and strategic partners across primary international commerce centers:
               </p>
               <div className="space-y-2.5 pt-2">
                 <div className="flex items-center gap-2 text-xs text-[#070B14]">
                   <Navigation size={14} className="text-[#C59B27]" />
-                  <span>5 minutes from Deira Waterfront & Corniche</span>
+                  <span>North America Delivery Hub: New York & San Francisco (EST/PST)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#070B14]">
                   <Navigation size={14} className="text-[#C59B27]" />
-                  <span>10 minutes from Dubai International Airport (DXB)</span>
+                  <span>EMEA Delivery Hub: London & Frankfurt (GMT/CET)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#070B14]">
                   <Navigation size={14} className="text-[#C59B27]" />
-                  <span>15 minutes from DIFC & Downtown Dubai</span>
+                  <span>Middle East Hub: Regional Delivery Network (GST/AST)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#070B14]">
                   <Navigation size={14} className="text-[#C59B27]" />
-                  <span>Convenient visitor parking available on 7th A Street</span>
+                  <span>Asia-Pacific Delivery Hub: Singapore (SGT)</span>
                 </div>
               </div>
             </div>
@@ -214,8 +214,8 @@ export default async function ContactPage() {
             <div className="lg:col-span-6">
               <div className="relative rounded-3xl overflow-hidden aspect-[16/10] bg-slate-900 border border-slate-200 shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80"
-                  alt="Dubai Deira location"
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+                  alt="Bird Hills Tech global delivery network and innovation center"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
@@ -223,13 +223,13 @@ export default async function ContactPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070B14]/90 via-[#070B14]/30 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md shadow-md text-left border border-slate-200">
                   <div className="text-xs font-bold uppercase text-[#C59B27]">
-                    Bird Hills Tech HQ
+                    Bird Hills Tech Global Delivery
                   </div>
                   <div className="text-sm font-extrabold text-[#070B14]">
-                    Deira - Stone Building - 122 7th A Street
+                    London · New York · Singapore · Distributed Worldwide
                   </div>
                   <div className="text-[11px] text-[#667085] mt-0.5">
-                    Al Baraha, Dubai, United Arab Emirates
+                    Operating in EST, GMT, GST, and SGT Time Zones
                   </div>
                 </div>
               </div>
@@ -242,22 +242,22 @@ export default async function ContactPage() {
       <FaqAccordion
         items={[
           {
-            question: "How quickly will your Dubai team respond to our message?",
+            question: "How quickly will your team respond to our message?",
             answer:
-              "We guarantee a response within 2 business hours during UAE business hours (Monday – Saturday, 9:00 AM – 6:00 PM GST). For urgent inquiries, please contact our team directly via WhatsApp or phone at +971 52 440 5785.",
+              "We guarantee a response within 2 business hours during global business hours (Monday – Friday, 9:00 AM – 6:00 PM across regional hubs). For urgent technical inquiries, reach our team directly via WhatsApp or phone at +971 52 440 5785.",
             category: "Consultation",
           },
           {
-            question: "Can we schedule an in-person meeting in Dubai before signing an agreement?",
+            question: "Can we schedule a consultation or execute an NDA before sharing proprietary briefs?",
             answer:
-              "Yes, absolutely. We welcome meetings at our registered corporate office at Stone Building, Deira, or we can arrange an introductory consultation at your Dubai premises.",
-            category: "Meetings",
+              "Yes, absolutely. We take intellectual property and confidentiality seriously. We routinely execute bilateral mutual NDAs before reviewing detailed product briefs, architectures, or proprietary data.",
+            category: "Legal & Privacy",
           },
           {
-            question: "Do you execute Non-Disclosure Agreements (NDAs) prior to project discussions?",
+            question: "How do you coordinate with international clients across time zones?",
             answer:
-              "Yes. We take intellectual property and confidentiality seriously. We routinely execute mutual NDAs before reviewing detailed product briefs, architectures, or proprietary data.",
-            category: "Legal",
+              "Our engineering leads and solution architects are distributed across North America, Europe, the GCC, and Asia-Pacific. We provide continuous communication via Slack, WhatsApp, and weekly milestone review calls.",
+            category: "Operations",
           },
           {
             question: "What information should we prepare for our initial scoping call?",
@@ -266,15 +266,15 @@ export default async function ContactPage() {
             category: "Scoping",
           },
           {
-            question: "Do you work with international clients outside the UAE?",
+            question: "What international payment methods and invoicing currencies do you support?",
             answer:
-              "Yes. While we are headquartered in Dubai, we partner with enterprises across Saudi Arabia, Qatar, the UK, Europe, and North America, accommodating regional time zones and international wire transfers seamlessly.",
-            category: "International",
+              "We bill primarily in USD. We accept global SWIFT/ACH wire transfers, corporate credit cards, and Stripe invoices with structured milestone delivery.",
+            category: "Billing",
           },
         ]}
         title="Project Intake & Consultation Questions"
         eyebrow="COMMUNICATION & PROCESS CLARITY"
-        description="Direct details on our consultation process, NDA confidentiality, meeting locations, and response times in Dubai."
+        description="Direct details on our consultation process, NDA confidentiality, global delivery, and response times."
         theme="light"
         includeSchema={true}
       />

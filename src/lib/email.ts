@@ -142,7 +142,7 @@ export async function sendBookingNotification(data: BookingEmailData) {
             </div>
           </div>
           <div class="footer">
-            © 2026 Bird Hills Tech Dubai · Operational CRM & Lead Notification System
+            © 2026 Bird Hills Tech Global · Operational CRM & Lead Notification System
           </div>
         </div>
       </body>
@@ -168,7 +168,7 @@ export async function sendBookingNotification(data: BookingEmailData) {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Consultation Request Received - Bird Hills Tech</title>
+        <title>Consultation Request Received - Bird Hills Tech Global</title>
         <style>
           body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 24px; color: #1e293b; }
           .container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; }
@@ -183,13 +183,13 @@ export async function sendBookingNotification(data: BookingEmailData) {
       <body>
         <div class="container">
           <div class="header">
-            <p>Bird Hills Tech Dubai</p>
+            <p>Bird Hills Tech Global</p>
             <h1>Consultation Request Received</h1>
           </div>
           <div class="content">
             <p style="font-size: 16px; color: #0f172a; margin-top: 0;">Dear <strong>${data.name}</strong>,</p>
             <p style="font-size: 14px; line-height: 1.6; color: #475569;">
-              Thank you for scheduling a strategic consultation with Bird Hills Tech. We have received your booking request for <strong>${data.service}</strong>.
+              Thank you for scheduling a strategic consultation with Bird Hills Tech Global. We have received your booking request for <strong>${data.service}</strong>.
             </p>
 
             <div class="card">
@@ -200,7 +200,7 @@ export async function sendBookingNotification(data: BookingEmailData) {
                 </tr>
                 <tr style="border-bottom: 1px solid #f0eee9;">
                   <td style="padding: 8px 0; color: #64748b;">Preferred Time:</td>
-                  <td style="padding: 8px 0; color: #0f172a; font-weight: 700; text-align: right;">${data.timeSlot} (GST)</td>
+                  <td style="padding: 8px 0; color: #0f172a; font-weight: 700; text-align: right;">${data.timeSlot}</td>
                 </tr>
                 <tr>
                   <td style="padding: 8px 0; color: #64748b;">Service Area:</td>
@@ -210,7 +210,7 @@ export async function sendBookingNotification(data: BookingEmailData) {
             </div>
 
             <p style="font-size: 14px; line-height: 1.6; color: #475569;">
-              Our senior technology and digital growth team in Dubai will review your brief and send you a calendar invitation and meeting link shortly.
+              Our senior technology and digital growth team will review your brief and send you a calendar invitation and meeting link shortly.
             </p>
             <p style="font-size: 14px; line-height: 1.6; color: #475569;">
               If you have urgent questions, you can also reach us directly via WhatsApp at <strong>+971 52 440 5785</strong> or reply directly to this email.
@@ -218,12 +218,12 @@ export async function sendBookingNotification(data: BookingEmailData) {
             
             <p style="margin-top: 24px; font-size: 14px; color: #0f172a; font-weight: 600;">
               Warm regards,<br>
-              <span style="color: #B38728;">The Bird Hills Tech Team</span><br>
-              <span style="font-size: 12px; color: #64748b; font-weight: 400;">Dubai, United Arab Emirates</span>
+              <span style="color: #B38728;">The Bird Hills Tech Global Team</span><br>
+              <span style="font-size: 12px; color: #64748b; font-weight: 400;">Global Enterprise Technology Partner</span>
             </p>
           </div>
           <div class="footer">
-            © 2026 Bird Hills Tech. All rights reserved. Registered in Dubai, UAE.
+            © 2026 Bird Hills Tech Global. All rights reserved.
           </div>
         </div>
       </body>
@@ -234,9 +234,9 @@ export async function sendBookingNotification(data: BookingEmailData) {
     await mailTransporter.sendMail({
       from: defaultFrom,
       to: data.email,
-      subject: `Consultation Confirmed: ${data.service} with Bird Hills Tech`,
+      subject: `Consultation Confirmed: ${data.service} with Bird Hills Tech Global`,
       html: clientHtml,
-      text: `Dear ${data.name}, thank you for booking a consultation with Bird Hills Tech for ${data.service} on ${data.date} at ${data.timeSlot}. Our Dubai team will send you the calendar invite shortly.`,
+      text: `Dear ${data.name}, thank you for booking a consultation with Bird Hills Tech Global for ${data.service} on ${data.date} at ${data.timeSlot}. Our team will send you the calendar invite shortly.`,
     });
 
     return { success: true };
@@ -342,7 +342,7 @@ export async function sendContactNotification(data: ContactEmailData) {
             </div>
           </div>
           <div class="footer">
-            © 2026 Bird Hills Tech Dubai · Operational CRM & Lead Notification System
+            © 2026 Bird Hills Tech Global · Operational CRM & Lead Notification System
           </div>
         </div>
       </body>

@@ -324,7 +324,7 @@ export default async function SingleBlogPage({
               </div>
               <h4 className="text-lg font-bold text-[#070B14]">{post.author}</h4>
               <p className="text-xs sm:text-sm text-[#667085] leading-relaxed">
-                Senior Technology & Digital Strategy Specialist at Bird Hills Tech Dubai. Advising enterprise leadership on modern Next.js cloud architecture, high-converting digital branding, and revenue-centric digital transformation across the UAE.
+                Senior Technology & Digital Strategy Specialist at Bird Hills Tech Global. Advising enterprise leadership on modern Next.js cloud architecture, high-converting digital branding, and revenue-centric digital transformation worldwide.
               </p>
             </div>
           </div>
@@ -340,7 +340,7 @@ export default async function SingleBlogPage({
                 Ready to implement this architecture in your business?
               </h3>
               <p className="text-xs text-slate-300 max-w-md">
-                Schedule a 30-minute technical session with our Dubai senior architects to review your systems.
+                Schedule a 30-minute technical session with our senior enterprise architects to review your systems.
               </p>
             </div>
             <Link

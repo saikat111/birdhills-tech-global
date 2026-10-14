@@ -88,10 +88,10 @@ export default async function HostingPage() {
         featuresJson: JSON.stringify([
           "Unlimited Hosted Websites",
           "100 GB Ultra-Fast NVMe SSD Storage",
-          "Free Domain Name (.com / .ae) for 1st Year",
+          "Free Domain Name (.com / .io) for 1st Year",
           "Free Wildcard SSL & Dedicated IP Support",
           "Unlimited Professional Email Inboxes",
-          "Dubai GCC Edge Cloud Node Acceleration",
+          "Global Multi-Region Edge Cloud Node Acceleration",
           "Daily Automated Off-Site Backups",
           "1-Click Staging & Git Deployment Hub",
           "24/7 Priority Emergency Support",
@@ -150,7 +150,7 @@ export default async function HostingPage() {
   const hostingFaqs = [
     {
       q: "Where are Bird Hills Tech servers physically located?",
-      a: "Our primary high-concurrency cloud nodes are hosted in state-of-the-art Tier-3 and Tier-4 data centres across North America (US East / West), Europe (Frankfurt, London), Asia-Pacific (Singapore), and the Middle East (Dubai), paired with Cloudflare's global Edge Network delivering low latency worldwide.",
+      a: "Our primary high-concurrency cloud nodes are hosted in state-of-the-art Tier-3 and Tier-4 data centers across North America (US East / West), Europe (Frankfurt, London), and Asia-Pacific (Singapore), paired with Cloudflare's global Edge Network delivering sub-25ms latency worldwide.",
     },
     {
       q: "How does the Free 0-Downtime Migration work?",
@@ -229,8 +229,8 @@ export default async function HostingPage() {
               <div className="text-xs text-[#667085] font-semibold uppercase mt-1">Uptime SLA Guarantee</div>
             </div>
             <div className="p-4 rounded-2xl bg-[#FAF8F5] border border-[#E4E7EC]">
-              <div className="text-2xl sm:text-3xl font-black text-[#C59B27]">&lt; 15ms</div>
-              <div className="text-xs text-[#667085] font-semibold uppercase mt-1">Dubai & GCC Latency</div>
+              <div className="text-2xl sm:text-3xl font-black text-[#C59B27]">&lt; 25ms</div>
+              <div className="text-xs text-[#667085] font-semibold uppercase mt-1">Global Edge Latency</div>
             </div>
             <div className="p-4 rounded-2xl bg-[#FAF8F5] border border-[#E4E7EC]">
               <div className="text-2xl sm:text-3xl font-black text-[#070B14]">Pure NVMe</div>
@@ -255,7 +255,7 @@ export default async function HostingPage() {
               Select Your Cloud Architecture
             </h2>
             <p className="text-sm text-[#667085]">
-              All plans include enterprise DDoS protection, free SSL certificates, and 24/7 Dubai technical assistance.
+              All plans include enterprise DDoS protection, free SSL certificates, and 24/7 senior DevOps technical assistance.
             </p>
           </div>
 
@@ -371,7 +371,7 @@ export default async function HostingPage() {
               The Bird Hills Cloud Architecture
             </h2>
             <p className="text-sm text-[#667085]">
-              Compare our regional Dubai edge stack with slow overseas generic shared hosting.
+              Compare our enterprise global edge stack with sluggish legacy shared hosting.
             </p>
           </div>
 
@@ -390,9 +390,9 @@ export default async function HostingPage() {
               <div className="w-12 h-12 rounded-2xl bg-[#C59B27]/10 flex items-center justify-center text-[#C59B27]">
                 <Globe size={24} />
               </div>
-              <h3 className="text-lg font-extrabold text-[#070B14]">Sub-15ms GCC Edge Latency</h3>
+              <h3 className="text-lg font-extrabold text-[#070B14]">Sub-25ms Global Edge Latency</h3>
               <p className="text-xs text-[#667085] leading-relaxed">
-                Hosting websites in the US or Europe adds 140ms–200ms latency on every request. Our Dubai edge nodes serve your local UAE customers with near-zero network delay.
+                Single-region servers add severe network lag for international visitors. Our multi-region Anycast edge network routes traffic to the nearest node, ensuring instantaneous response times worldwide.
               </p>
             </div>
 
@@ -442,7 +442,7 @@ export default async function HostingPage() {
             <div className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 space-y-6">
               <h3 className="text-xl font-bold text-white">Request Free Migration Assistance</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Connect directly with our Dubai cloud engineering desk to schedule your seamless site transfer.
+                Connect directly with our enterprise cloud engineering desk to schedule your seamless site transfer.
               </p>
               <div className="space-y-3">
                 <a
@@ -476,7 +476,7 @@ export default async function HostingPage() {
         }))}
         title="Hosting Frequently Asked Questions"
         eyebrow="TECHNICAL CLARITY"
-        description="Everything you need to know about our Dubai Tier-3/4 data center nodes, zero-downtime migration, and automated off-site backups."
+        description="Everything you need to know about our multi-region Tier-3/4 data center nodes, zero-downtime migration, and automated off-site backups."
         theme="light"
         includeSchema={true}
       />

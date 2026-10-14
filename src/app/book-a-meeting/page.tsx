@@ -6,9 +6,9 @@ import BookingForm from "@/components/booking/BookingForm";
 import FaqAccordion from "@/components/common/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Book a Strategic Consultation | Bird Hills Tech Dubai",
+  title: "Book a Strategic Consultation | Bird Hills Tech Global",
   description:
-    "Schedule a 45-minute strategic consultation with Bird Hills Tech. In-person at our Deira Dubai office or via Google Meet.",
+    "Schedule a 45-minute strategic consultation with Bird Hills Tech. Available worldwide via secure Google Meet, Teams, or Zoom.",
   alternates: {
     canonical: "https://birdhillstech.com/book-a-meeting",
   },
@@ -22,7 +22,7 @@ export default function BookMeetingPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=90"
-            alt="Executive corporate meeting room in Dubai"
+            alt="Executive corporate boardroom and tech briefing suite"
             fill
             priority
             sizes="100vw"
@@ -90,7 +90,7 @@ export default function BookMeetingPage() {
                 <div className="pt-4 border-t border-slate-200 text-xs text-slate-500 space-y-2">
                   <div className="flex items-center gap-2">
                     <Clock size={14} className="text-[#C59B27]" />
-                    <span>Duration: 45 minutes · Gulf Standard Time (GST)</span>
+                    <span>Duration: 45 minutes · Accommodating EST, GMT, GST, and SGT</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Shield size={14} className="text-emerald-600" />
@@ -99,14 +99,13 @@ export default function BookMeetingPage() {
                 </div>
               </div>
 
-              {/* Office Callout */}
+              {/* Global Briefing Callout */}
               <div className="p-8 rounded-3xl bg-[#070B14] border border-[#C59B27]/25 text-white space-y-4 shadow-lg">
                 <div className="text-xs font-bold uppercase tracking-wider text-[#D4AF37]">
-                  In-Person Consultations in Dubai
+                  Global Virtual Briefings & Regional Hubs
                 </div>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  We welcome meetings at our registered office in Deira (Stone Building - 122 7th A
-                  Street, Al Baraha, Dubai) or can arrange an executive briefing at your UAE offices.
+                  Briefings are hosted worldwide via secure video conference, or scheduled at our regional hubs in London, New York, and Singapore.
                 </p>
                 <div className="pt-2 flex items-center justify-between">
                   <a
@@ -153,10 +152,10 @@ export default function BookMeetingPage() {
             category: "Attendance",
           },
           {
-            question: "Can we request an in-person meeting at our office in Dubai?",
+            question: "Can we request an in-person executive briefing or NDA prior to our call?",
             answer:
-              "Certainly. Mention your office location in the notes field, and our partners will confirm travel arrangements across Dubai, Abu Dhabi, or Sharjah.",
-            category: "In-Person",
+              "Certainly. Mention your requirements in the notes field, and our team will provide a mutual Non-Disclosure Agreement (NDA) or coordinate an in-person executive briefing at one of our regional hubs.",
+            category: "Executive Briefing",
           },
         ]}
         title="Consultation & Briefing FAQs"

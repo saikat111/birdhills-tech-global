@@ -139,7 +139,7 @@ export function DomainSearchClient() {
         <button
           type="button"
           onClick={() => {
-            setSearchTerm("dubaiholding");
+            setSearchTerm("globalcloud");
           }}
           className="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition-colors flex items-center gap-1.5"
         >

@@ -35,7 +35,7 @@ export const defaultSettings: SiteSettings = {
   google_indexing: "enabled", // enabled for search engine crawling
   company_name: "Bird Hills Tech Global",
   tagline: "Global Enterprise Software & Digital Architecture",
-  address: "Global Delivery Hubs: Dubai · London · Singapore · Remote Engineering Worldwide",
+  address: "Global Delivery Hubs: London · New York · Singapore · Distributed Engineering Worldwide",
   phone: "+971 52 440 5785",
   whatsapp: "+971 52 440 5785",
   email: "contact@birdhillstech.com",

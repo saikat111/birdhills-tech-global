@@ -465,7 +465,7 @@ export function Header() {
                             href="/pricing"
                             className="hover:text-[#C59B27] transition-colors flex items-center gap-1"
                           >
-                            <span>Pricing Packages (AED & USD)</span>
+                            <span>Pricing Packages</span>
                             <ChevronRight size={12} className="text-[#C59B27]" />
                           </Link>
                         </div>
@@ -483,19 +483,8 @@ export function Header() {
             </nav>
             </div>
 
-            {/* Right Group: Fast Consultation Meeting Shortcut & Regional Hub */}
-            <div className="hidden lg:flex items-center gap-2.5">
-              <a
-                href="https://au.birdhillstech.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-600 hover:text-[#C59B27] bg-[#FAF8F5] border border-[#E4E7EC] hover:border-[#C59B27]/40 rounded-xl transition-all shadow-2xs hover:bg-white"
-                title="Switch to Dubai & UAE Regional Hub"
-              >
-                <Globe size={13} className="text-[#C59B27]" />
-                <span className="hidden xl:inline">Dubai Hub (AED)</span>
-                <span className="xl:hidden">Dubai</span>
-              </a>
+            {/* Right Group: Fast Consultation Meeting Shortcut */}
+            <div className="hidden lg:flex items-center gap-3">
               <Link
                 href="/book-a-meeting"
                 className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-[#0B0F19] hover:text-[#C59B27] bg-[#FAF8F5] border border-[#E4E7EC] hover:border-[#C59B27]/40 rounded-xl transition-all shadow-2xs hover:bg-white"

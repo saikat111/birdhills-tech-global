@@ -132,7 +132,7 @@ export function BookingForm() {
               </button>
               <button
                 type="button"
-                onClick={() => setFormData({ ...formData, meetingType: "In-Person (Dubai Office)" })}
+                onClick={() => setFormData({ ...formData, meetingType: "In-Person (Executive Briefing)" })}
                 className={`py-3 px-4 rounded-xl border text-xs font-bold flex items-center justify-center gap-2 transition-all ${
                   formData.meetingType.includes("In-Person")
                     ? "bg-[#C59B27]/15 border-[#C59B27] text-[#B38728] shadow-sm"
@@ -140,7 +140,7 @@ export function BookingForm() {
                 }`}
               >
                 <MapPin size={16} />
-                In-Person (Deira Office)
+                In-Person (Executive Briefing)
               </button>
             </div>
           </div>
@@ -207,7 +207,7 @@ export function BookingForm() {
                 type="text"
                 value={formData.company}
                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                placeholder="e.g. Apex Holdings DXB"
+                placeholder="e.g. Apex Global Enterprises"
                 className="w-full text-sm bg-[#F7F9FC] border border-[#E4E7EC] rounded-xl px-4 py-3 text-[#101828] placeholder-slate-400 focus:outline-none focus:border-[#C59B27] focus:ring-1 focus:ring-[#C59B27] focus:bg-white transition-colors"
               />
             </div>
@@ -239,7 +239,7 @@ export function BookingForm() {
                 required
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="+971 52 000 0000"
+                placeholder="+1 (555) 000-0000"
                 className="w-full text-sm bg-[#F7F9FC] border border-[#E4E7EC] rounded-xl px-4 py-3 text-[#101828] placeholder-slate-400 focus:outline-none focus:border-[#C59B27] focus:ring-1 focus:ring-[#C59B27] focus:bg-white transition-colors"
               />
             </div>

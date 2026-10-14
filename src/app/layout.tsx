@@ -27,27 +27,27 @@ export async function generateMetadata(): Promise<Metadata> {
   const keywordsArray = settings.site_keywords
     ? settings.site_keywords.split(",").map((k) => k.trim()).filter(Boolean)
     : [
-        "Web Development Company in Dubai",
-        "Digital Marketing Agency in Dubai",
-        "AI Business Automation Dubai",
-        "Domain and Hosting Services",
-        "Local SEO Dubai",
-        "Bird Hills Tech",
+        "Global Enterprise Web Development",
+        "Digital Marketing Agency",
+        "AI Business Automation",
+        "Cloud Hosting & Infrastructure",
+        "Enterprise Next.js Engineering",
+        "Bird Hills Tech Global",
       ];
 
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://birdhillstech.com"),
     title: {
-      default: settings.site_title || "Bird Hills Tech | Digital Marketing & Web Development Agency",
-      template: "%s | Bird Hills Tech",
+      default: settings.site_title || "Bird Hills Tech | Global Enterprise Software & Digital Architecture",
+      template: "%s | Bird Hills Tech Global",
     },
     description:
       settings.site_description ||
-      "Bird Hills Tech delivers Digital Marketing, AI Business Automation, Web Development, Domain & Hosting Services for smarter, scalable business growth.",
+      "Enterprise web engineering, scalable cloud infrastructure, custom software development, and AI business automation for organizations worldwide.",
     keywords: keywordsArray,
-    authors: [{ name: settings.company_name || "Bird Hills Tech" }],
-    creator: settings.company_name || "Bird Hills Tech",
-    publisher: settings.company_name || "Bird Hills Tech",
+    authors: [{ name: settings.company_name || "Bird Hills Tech Global" }],
+    creator: settings.company_name || "Bird Hills Tech Global",
+    publisher: settings.company_name || "Bird Hills Tech Global",
     alternates: {
       canonical: "https://birdhillstech.com",
     },
@@ -75,28 +75,28 @@ export async function generateMetadata(): Promise<Metadata> {
         },
     openGraph: {
       type: "website",
-      locale: "en_AE",
+      locale: "en_US",
       url: "https://birdhillstech.com",
-      siteName: settings.company_name || "Bird Hills Tech",
-      title: settings.site_title || "Bird Hills Tech | Digital Marketing & Web Development Agency",
+      siteName: settings.company_name || "Bird Hills Tech Global",
+      title: settings.site_title || "Bird Hills Tech | Global Enterprise Software & Digital Architecture",
       description:
         settings.site_description ||
-        "Bird Hills Tech delivers Digital Marketing, AI Business Automation, Web Development, Domain & Hosting Services for smarter, scalable business growth.",
+        "Enterprise web engineering, scalable cloud infrastructure, custom software development, and AI business automation for organizations worldwide.",
       images: [
         {
           url: "/images/logo-icon.png",
           width: 512,
           height: 512,
-          alt: settings.company_name || "Bird Hills Tech",
+          alt: settings.company_name || "Bird Hills Tech Global",
         },
       ],
     },
     twitter: {
       card: "summary",
-      title: settings.site_title || "Bird Hills Tech | Digital Marketing & Web Development Agency",
+      title: settings.site_title || "Bird Hills Tech | Global Enterprise Software & Digital Architecture",
       description:
         settings.site_description ||
-        "Bird Hills Tech delivers Digital Marketing, AI Business Automation, Web Development, Domain & Hosting Services for smarter, scalable business growth.",
+        "Enterprise web engineering, scalable cloud infrastructure, custom software development, and AI business automation for organizations worldwide.",
       images: ["/images/logo-icon.png"],
     },
     icons: {
@@ -119,40 +119,13 @@ export default async function RootLayout({
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
-    name: settings.company_name || "Bird Hills Tech",
+    "@type": ["Organization", "ProfessionalService"],
+    name: settings.company_name || "Bird Hills Tech Global",
     url: settings.website || "https://birdhillstech.com",
     logo: "https://birdhillstech.com/images/logo-full.png",
     image: "https://birdhillstech.com/images/logo-full.png",
     telephone: settings.phone,
     email: settings.email,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: settings.address || "Stone Building, 122 7th A Street, Al Baraha",
-      addressLocality: "Dubai",
-      addressRegion: "Dubai",
-      addressCountry: "AE",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "25.2818",
-      longitude: "55.3142",
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        opens: "09:00",
-        closes: "18:00",
-      },
-    ],
     sameAs: [
       settings.linkedin_url,
       settings.twitter_url,
@@ -161,7 +134,7 @@ export default async function RootLayout({
       settings.facebook_url,
       settings.youtube_url,
     ].filter(Boolean),
-    areaServed: ["United Arab Emirates", "Saudi Arabia", "Qatar", "GCC", "Global"],
+    areaServed: ["Worldwide", "North America", "Europe", "Asia-Pacific", "Middle East"],
     priceRange: "$$",
     description: settings.site_description,
   };

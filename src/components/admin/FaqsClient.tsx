@@ -156,7 +156,7 @@ export function FaqsClient({ initialFaqs }: FaqsClientProps) {
             Frequently Asked Questions (FAQs)
           </h1>
           <p className="text-xs sm:text-sm text-[#667085] mt-1">
-            Manage inquiries regarding contracts, Dubai office engagements, tech capabilities, and process.
+            Manage inquiries regarding contracts, global client engagements, tech capabilities, and process.
           </p>
         </div>
         <button

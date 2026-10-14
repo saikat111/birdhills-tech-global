@@ -198,7 +198,7 @@ export default function PricingCardsClient({ tiers }: Props) {
             Monthly Technical & Growth Retainers
           </h3>
           <p className="text-xs sm:text-sm text-[#667085]">
-            Dedicated monthly engineering and acquisition capacity for scaling enterprises in Dubai.
+            Dedicated monthly engineering and acquisition capacity for scaling enterprises worldwide.
           </p>
         </div>
 
