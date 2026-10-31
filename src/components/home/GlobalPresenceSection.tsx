@@ -73,7 +73,7 @@ export function GlobalPresenceSection() {
             {/* Right Image: Modern Global Tech Innovation Architecture */}
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[380px] bg-slate-900">
               <Image
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85"
+                src="/images/generated/section_global_presence.jpg"
                 alt="Modern global enterprise technology center and corporate headquarters"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

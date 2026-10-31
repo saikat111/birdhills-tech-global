@@ -10,7 +10,7 @@ export function IndustryVerticalsSection() {
       market: "Global Flagships & Portfolios",
       desc: "High-converting development portals, interactive masterplan viewers, and investor acquisition engines for premier developers and institutional funds.",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85", // Modern architectural real estate property
+        "/images/generated/vertical_realestate.jpg", // Modern architectural real estate property
       icon: Building2,
       stat: "$25M+ Volume",
     },
@@ -19,7 +19,7 @@ export function IndustryVerticalsSection() {
       market: "International Markets",
       desc: "Bespoke digital flagships, private VIP appointment engines, and frictionless checkout experiences tailored for high-ticket luxury buyers worldwide.",
       image:
-        "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=85", // Luxury gold diamond high jewelry collection
+        "/images/generated/vertical_retail.jpg", // Luxury gold diamond high jewelry collection
       icon: ShoppingBag,
       stat: "4.2x ROAS Delivered",
     },
@@ -28,7 +28,7 @@ export function IndustryVerticalsSection() {
       market: "Global Supply Networks",
       desc: "Custom fleet telemetry dashboards, enterprise B2B shipment tracking portals, and client self-service logistics clearing hubs.",
       image:
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85", // Container cargo ship and logistics maritime port
+        "/images/generated/vertical_logistics.jpg", // Container cargo ship and logistics maritime port
       icon: Truck,
       stat: "100K+ Tracking Ops",
     },
@@ -37,7 +37,7 @@ export function IndustryVerticalsSection() {
       market: "Life Sciences & Healthcare",
       desc: "HIPAA-compliant patient scheduling engines, specialized clinical funnels, and high-intent organic search dominance.",
       image:
-        "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85", // Modern aesthetic medical clinic and consulting suite
+        "/images/generated/vertical_healthcare.jpg", // Modern aesthetic medical clinic and consulting suite
       icon: Stethoscope,
       stat: "+320% Qualified Consults",
     },
@@ -46,7 +46,7 @@ export function IndustryVerticalsSection() {
       market: "New York · London · Singapore",
       desc: "Prestige corporate portals, secure investor document distribution rooms, and authoritative institutional branding.",
       image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85", // Modern corporate financial towers
+        "/images/generated/vertical_capital.jpg", // Modern corporate financial towers
       icon: Landmark,
       stat: "Bank-Grade Security",
     },
