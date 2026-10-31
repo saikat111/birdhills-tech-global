@@ -24,8 +24,12 @@ import {
 import FinalCtaSection from "@/components/home/FinalCtaSection";
 
 export async function generateStaticParams() {
-  const projects = await prisma.project.findMany({ select: { slug: true } });
-  return projects.map((p) => ({ slug: p.slug }));
+  try {
+    const projects = await prisma.project.findMany({ select: { slug: true } });
+    return projects.map((p) => ({ slug: p.slug }));
+  } catch (err) {
+    return [];
+  }
 }
 
 export async function generateMetadata({
@@ -34,24 +38,28 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const project = await prisma.project.findUnique({ where: { slug } });
+  try {
+    const project = await prisma.project.findUnique({ where: { slug } });
 
-  if (!project) {
-    return { title: "Portfolio Project Not Found | Bird Hills Tech" };
+    if (project) {
+      return {
+        title: project.seoTitle || `${project.title} | Portfolio Showcase`,
+        description: project.seoDescription || project.shortDesc,
+        alternates: {
+          canonical: `https://birdhillstech.com/work/${project.slug}`,
+        },
+        openGraph: {
+          title: project.title,
+          description: project.shortDesc,
+          images: project.coverImage ? [{ url: project.coverImage }] : [],
+        },
+      };
+    }
+  } catch (err) {
+    // fallback
   }
 
-  return {
-    title: project.seoTitle || `${project.title} | Portfolio Showcase`,
-    description: project.seoDescription || project.shortDesc,
-    alternates: {
-      canonical: `https://birdhillstech.com/work/${project.slug}`,
-    },
-    openGraph: {
-      title: project.title,
-      description: project.shortDesc,
-      images: [{ url: project.coverImage }],
-    },
-  };
+  return { title: "Portfolio Showcase | Bird Hills Tech" };
 }
 
 export default async function ProjectDetailPage({
@@ -60,10 +68,26 @@ export default async function ProjectDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const project = await prisma.project.findUnique({
-    where: { slug },
-    include: { images: true },
-  });
+
+  let project: any = null;
+  let allProjects: any[] = [];
+
+  try {
+    project = await prisma.project.findUnique({
+      where: { slug },
+      include: { images: true },
+    });
+
+    if (project) {
+      allProjects = await prisma.project.findMany({
+        where: { status: "published" },
+        select: { id: true, title: true, slug: true, coverImage: true, category: true },
+        orderBy: { createdAt: "desc" },
+      });
+    }
+  } catch (err) {
+    console.warn("Database unavailable in ProjectDetailPage:", err);
+  }
 
   if (!project) {
     notFound();
@@ -83,12 +107,7 @@ export default async function ProjectDetailPage({
     technologies = ["Next.js 16", "TypeScript", "Tailwind CSS"];
   }
 
-  // Related / Adjacent Projects for navigation
-  const allProjects = await prisma.project.findMany({
-    where: { status: "published" },
-    select: { id: true, title: true, slug: true, coverImage: true, category: true },
-    orderBy: { createdAt: "desc" },
-  });
+  // Related / Adjacent Projects for navigation (populated safely in try block above)
 
   const currentIndex = allProjects.findIndex((p) => p.id === project.id);
   const prevProject =

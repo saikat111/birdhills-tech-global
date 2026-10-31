@@ -19,11 +19,15 @@ import {
 import FinalCtaSection from "@/components/home/FinalCtaSection";
 
 export async function generateStaticParams() {
-  const posts = await prisma.blogPost.findMany({
-    where: { status: "published" },
-    select: { slug: true },
-  });
-  return posts.map((p) => ({ slug: p.slug }));
+  try {
+    const posts = await prisma.blogPost.findMany({
+      where: { status: "published" },
+      select: { slug: true },
+    });
+    return posts.map((p) => ({ slug: p.slug }));
+  } catch (err) {
+    return [];
+  }
 }
 
 export async function generateMetadata({
@@ -32,27 +36,31 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = await prisma.blogPost.findUnique({
-    where: { slug },
-    include: { category: true },
-  });
+  try {
+    const post = await prisma.blogPost.findUnique({
+      where: { slug },
+      include: { category: true },
+    });
 
-  if (!post) {
-    return { title: "Article Not Found | Bird Hills Tech" };
+    if (post) {
+      return {
+        title: post.seoTitle || `${post.title} | Bird Hills Tech Blog`,
+        description: post.seoDescription || post.excerpt,
+        alternates: {
+          canonical: `https://birdhillstech.com/blog/${post.slug}`,
+        },
+        openGraph: {
+          title: post.title,
+          description: post.excerpt,
+          images: post.coverImage ? [{ url: post.coverImage }] : [],
+        },
+      };
+    }
+  } catch (err) {
+    // fallback
   }
 
-  return {
-    title: post.seoTitle || `${post.title} | Bird Hills Tech Blog`,
-    description: post.seoDescription || post.excerpt,
-    alternates: {
-      canonical: `https://birdhillstech.com/blog/${post.slug}`,
-    },
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      images: [{ url: post.coverImage }],
-    },
-  };
+  return { title: "Article | Bird Hills Tech Blog" };
 }
 
 export default async function SingleBlogPage({
@@ -61,25 +69,34 @@ export default async function SingleBlogPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = await prisma.blogPost.findUnique({
-    where: { slug },
-    include: { category: true },
-  });
+
+  let post: any = null;
+  let relatedPosts: any[] = [];
+
+  try {
+    post = await prisma.blogPost.findUnique({
+      where: { slug },
+      include: { category: true },
+    });
+
+    if (post && post.status === "published") {
+      relatedPosts = await prisma.blogPost.findMany({
+        where: {
+          status: "published",
+          NOT: { id: post.id },
+          ...(post.categoryId ? { categoryId: post.categoryId } : {}),
+        },
+        take: 3,
+        include: { category: true },
+      });
+    }
+  } catch (err) {
+    console.warn("Database unavailable in SingleBlogPage:", err);
+  }
 
   if (!post || post.status !== "published") {
     notFound();
   }
-
-  // Related posts
-  const relatedPosts = await prisma.blogPost.findMany({
-    where: {
-      status: "published",
-      NOT: { id: post.id },
-      ...(post.categoryId ? { categoryId: post.categoryId } : {}),
-    },
-    take: 3,
-    include: { category: true },
-  });
 
   // Share URLs
   const pageUrl = `https://birdhillstech.com/blog/${post.slug}`;
@@ -88,7 +105,7 @@ export default async function SingleBlogPage({
   const shareTw = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(pageUrl)}`;
 
   // Parse paragraphs and headings for structured display
-  const contentParagraphs = post.content.split("\n\n").filter(Boolean);
+  const contentParagraphs: string[] = (post.content || "").split("\n\n").filter(Boolean);
 
   return (
     <div className="flex flex-col min-h-screen pt-24 bg-white">
@@ -234,7 +251,7 @@ export default async function SingleBlogPage({
 
           {/* Formatted Article Content */}
           <div className="prose prose-slate max-w-none space-y-6 text-[#344054] text-base leading-relaxed">
-            {contentParagraphs.map((para, i) => {
+            {contentParagraphs.map((para: string, i: number) => {
               // Check if paragraph is an image: ![alt](url)
               if (para.includes("![") && para.includes("](")) {
                 const imgMatch = para.match(/^!\[(.*?)\]\((.*?)\)(?:\s*\n\s*\*?(.*?)\*?)?$/);
@@ -295,7 +312,7 @@ export default async function SingleBlogPage({
                 const items = para.split("\n").filter(Boolean);
                 return (
                   <ul key={i} className="space-y-2 my-4 list-none pl-0">
-                    {items.map((item, idx) => (
+                    {items.map((item: string, idx: number) => (
                       <li key={idx} className="flex items-start gap-2.5 text-sm sm:text-base">
                         <CheckCircle2 size={16} className="text-[#C59B27] shrink-0 mt-1" />
                         <span>{item.replace(/^[-*]\s+/, "")}</span>

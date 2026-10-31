@@ -28,15 +28,22 @@ export const metadata: Metadata = {
 export const revalidate = 60;
 
 export default async function BlogListingPage() {
-  const posts = await prisma.blogPost.findMany({
-    where: { status: "published" },
-    include: { category: true },
-    orderBy: { publishedAt: "desc" },
-  });
+  let posts: any[] = [];
+  let categories: any[] = [];
 
-  const categories = await prisma.blogCategory.findMany({
-    orderBy: { name: "asc" },
-  });
+  try {
+    posts = await prisma.blogPost.findMany({
+      where: { status: "published" },
+      include: { category: true },
+      orderBy: { publishedAt: "desc" },
+    });
+
+    categories = await prisma.blogCategory.findMany({
+      orderBy: { name: "asc" },
+    });
+  } catch (err) {
+    console.warn("Database unavailable in BlogListingPage:", err);
+  }
 
   const featuredPost = posts[0];
   const regularPosts = posts.slice(1);
