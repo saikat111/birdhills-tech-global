@@ -176,7 +176,7 @@ export default async function HostingPage() {
       <section className="relative py-24 md:py-32 bg-[#070B14] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?auto=format&fit=crop&w=2400&q=95"
+            src="/images/generated/hero_hosting_cloud.jpg"
             alt="Enterprise cloud hosting datacenter with glowing optical server racks and low-latency infrastructure"
             fill
             priority

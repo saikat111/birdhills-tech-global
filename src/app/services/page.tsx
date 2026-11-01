@@ -204,7 +204,7 @@ export default function ServicesHubPage() {
       category: "Data & Insights",
       desc: "Fix tracking blindspots with server-side GTM, Meta CAPI, GA4 ecommerce tracking, executive Looker dashboards, and conversion funnels.",
       image:
-        "/images/generated/service_crm_marketing.jpg",
+        "/images/generated/service_analytics_cro.jpg",
       icon: BarChart3,
       price: "From $490/mo",
       subServices: [

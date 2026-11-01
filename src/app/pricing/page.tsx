@@ -140,7 +140,7 @@ export default async function PricingPage() {
       <section className="relative py-24 md:py-32 bg-[#070B14] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/generated/page_about_hero.jpg"
+            src="/images/generated/visual_executive_growth.jpg"
             alt="Global financial district and corporate enterprise architecture"
             fill
             priority
